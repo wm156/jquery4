@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var xiaoming={
+				name:"小明",
+				age:18,
+				sex:"男",
+				addr:"vvv",
+				tel:123456,
+			 show:function(){
+			 	document.write(this.name+","+this.age+","+this.sex+","+this.addr+","+this.tel);
+			 }
+			}
+			for(var x in xiaoming){
+				console.log(x + "=" + xiaoming[x])
+			}
+		</script>
+	</body>
+</html>

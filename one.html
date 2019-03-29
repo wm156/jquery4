@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			var num=window.prompt("请输入一个五位数");
+			num=Number(num);
+			var g=num%10;
+			var s=parseInt(num%100/10);
+			var b=parseInt(num%1000/100);
+			var q=parseInt(num%10000/1000);
+			var w=parseInt(num%100000 /10000);
+			console.log("g="+g+",s="+s+",b="+b+",q="+q+",w="+w);
+			if(g==w && s==q){
+				window.alert(num+"是回文数");
+			}else{
+				window.alert(num+"不是回文数");
+			}
+		</script>
+	</body>
+
+</html>

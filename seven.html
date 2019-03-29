@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function Person(name,age){
+				this.name=name;
+				this.age=age;
+			}
+			Person.prototype.show=function(){
+				document.write(""+this.name+"的年龄是"+this.age+"");
+			}
+			var zhangSan=new Person("张三",30);
+			zhangSan.show();
+		</script>
+	</body>
+</html>

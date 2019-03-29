@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			var javaScriptNum = Number(window.prompt("请输入购买JavaScript书的数量"));
+			var penNum = Number(window.prompt("请输入购买钢笔的数量"));
+			var glassNum = Number(window.prompt("请输入眼镜的数量"));
+			var minukNum = Number(window.prompt("请输入购买牛奶的数量"));
+			var sum = 0;
+			if(javaScriptNum == 1) {
+				sum += javaScriptNum * 59 * 0.9;
+			} else if(javaScriptNum == 2) {
+				sum += javaScriptNum * 59 * 0.8;
+			} else if(javaScriptNum == 3) {
+				sum += javaScriptNum * 59 * 0.7;
+			} else if(javaScriptNum >= 4) {
+				sum += javaScriptNum * 59 * 0.65;
+			}
+
+			if(glassNum == 1) {
+				sum += glassNum * 199 * 0.9;
+			} else if(glassNum == 2) {
+				sum += glassNum * 199 * 0.8;
+			} else if(glassNum == 3) {
+				sum += glassNum * 199 * 0.7;
+			} else if(glassNum >= 4) {
+				sum += glassNum * 199 * 0.65;
+			}
+
+			if(penNum == 1) {
+				sum += penNum * 30 * 0.9;
+			} else if(penNum == 2) {
+				sum += penNum * 30 * 0.8;
+			} else if(penNum == 3) {
+				sum += penNum * 30 * 0.7;
+			} else if(penNum >= 4) {
+				sum += penNum * 30 * 0.65;
+			}
+
+			if(minukNum == 1) {
+				sum += minukNum * 68 * 0.9;
+			} else if(minukNum == 2) {
+				sum += minukNum * 68 * 0.8;
+			} else if(minukNum == 3) {
+				sum += minukNum * 68 * 0.7;
+			} else if(minukNum >= 4) {
+				sum += minukNum * 68 * 0.65;
+			}
+			document.write(sum + "元");
+		</script>
+	</body>
+
+</html>
